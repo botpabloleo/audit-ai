@@ -1,0 +1,28 @@
+# Dependencies
+node_modules/
+*/node_modules/
+
+# Build output
+frontend/build/
+
+# Environment (NUNCA subir API keys)
+.env
+backend/.env
+*.env.local
+
+# Base de datos (auto-generada al iniciar)
+backend/data/
+*.db
+*.json.bak
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+npm-debug.log*
+*.log
+
+# IDE
+.vscode/
+.idea/
