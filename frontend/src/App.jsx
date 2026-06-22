@@ -28,7 +28,7 @@ function Sidebar({ isOpen, onClose }) {
           <div className="logo-icon" aria-hidden="true">🔍</div>
           <div>
             <h1>AuditAI</h1>
-            <span>v1.0 • AI-Powered</span>
+            <span>v1.0</span>
           </div>
         </div>
         

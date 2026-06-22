@@ -3,7 +3,7 @@ const { db } = require('../models/database');
 const { getDemoPhases, getDemoRequirements, getDemoEvaluationDesign } = require('./demoData');
 
 // Groq API - gratuito y rápido
-const GROQ_MODEL = 'llama-3.1-8b-instant';
+const GROQ_MODEL = 'llama-3.3-70b-versatile';
 const GROQ_URL = 'https://api.groq.com/openai/v1/chat/completions';
 
 function isConfigured() {
@@ -48,7 +48,7 @@ async function generateAuditPlan(auditData, ragService) {
     return getDemoPhases(auditData);
   }
   const prompt = ragService.buildPhasesPrompt(auditData);
-  const raw = await callGroq(prompt, { maxTokens: 4000 });
+  const raw = await callGroq(prompt, { maxTokens: 1500 });
   return parseJSON(raw).phases || [];
 }
 
@@ -58,7 +58,7 @@ async function generateRequirements(auditData, ragService) {
     return getDemoRequirements(auditData);
   }
   const prompt = ragService.buildRequirementsPrompt(auditData);
-  const raw = await callGroq(prompt, { maxTokens: 3000 });
+  const raw = await callGroq(prompt, { maxTokens: 1500 });
   return parseJSON(raw).requirements || [];
 }
 
