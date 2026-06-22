@@ -214,6 +214,66 @@ GESTIÓN DE DEFECTOS: Jira, Azure DevOps, Bugzilla, GitHub Issues.
 CI/CD INTEGRATION: Jenkins, GitHub Actions, GitLab CI, Azure Pipelines.`,
       keywords: 'herramientas,SAST,DAST,SonarQube,OWASP ZAP,JMeter,cobertura',
       source: 'OWASP, NIST, ISACA', created_at: new Date().toISOString()
+    }    ,
+    {
+      id: uuidv4(), category: 'estandares',
+      title: 'ISO/IEC 12207 - Ciclo de Vida del Software',
+      content: `ISO/IEC 12207 establece un marco de referencia para los procesos del ciclo de vida del software. Es fundamental para la auditoría porque define los procesos que deben evaluarse:
+1) Procesos primarios: Adquisición, Suministro, Desarrollo, Operación, Mantenimiento.
+2) Procesos de soporte: Documentación, Gestión de la Configuración, Aseguramiento de Calidad, Verificación, Validación, Revisión Conjunta, Auditoría, Resolución de Problemas.
+3) Procesos organizacionales: Gestión, Infraestructura, Mejora, Recursos Humanos.
+En auditoría de software se aplica para verificar que el proceso de desarrollo sigue un ciclo de vida definido, evaluar la completitud de los procesos de soporte, comprobar trazabilidad entre requisitos y pruebas, y verificar gestión formal de configuración.`,
+      keywords: 'ISO12207,ciclo de vida,desarrollo,mantenimiento,procesos,verificacion,validacion',
+      source: 'ISO/IEC 12207:2017', created_at: new Date().toISOString()
+    },
+    {
+      id: uuidv4(), category: 'estandares',
+      title: 'ISO/IEC 14764 - Mantenimiento de Software',
+      content: `ISO/IEC 14764 define los procesos del mantenimiento de software. Tipos de mantenimiento a auditar:
+1) Correctivo: corrección de defectos detectados post-entrega.
+2) Adaptativo: modificaciones por cambios en el entorno (SO, BD, hardware).
+3) Perfectivo: mejoras en rendimiento o mantenibilidad.
+4) Preventivo: detección y corrección de fallas latentes antes que ocurran.
+Criterios de auditoría: registro formal de solicitudes de cambio, proceso de aprobación documentado, pruebas de regresión tras cada modificación, documentación actualizada, métricas MTTR y backlog de defectos.`,
+      keywords: 'ISO14764,mantenimiento,correctivo,adaptativo,perfectivo,preventivo,cambios',
+      source: 'ISO/IEC 14764:2006', created_at: new Date().toISOString()
+    },
+    {
+      id: uuidv4(), category: 'estandares',
+      title: 'ISO/IEC 25040 - Proceso de Evaluación de Calidad del Software',
+      content: `ISO/IEC 25040 define el proceso de evaluación de la calidad del producto software en 4 etapas:
+1) Establecer requisitos de evaluación: definir propósito, tipo de producto y modelo de calidad.
+2) Especificar la evaluación: seleccionar métricas, criterios de puntuación y umbrales.
+3) Diseñar la evaluación: producir el plan de evaluación detallado.
+4) Ejecutar la evaluación: aplicar métricas, comparar con criterios y generar resultados.
+Documentación requerida: especificación de requisitos de evaluación, plan de evaluación, informe de evaluación. Usa ISO 25010 como modelo de calidad de referencia.`,
+      keywords: 'ISO25040,evaluacion,calidad,proceso,metricas,criterios,plan evaluacion',
+      source: 'ISO/IEC 25040:2011', created_at: new Date().toISOString()
+    },
+    {
+      id: uuidv4(), category: 'metodos_auditoria',
+      title: 'ISO 19011 - Directrices para Auditoría de Sistemas de Gestión',
+      content: `ISO 19011 proporciona el método formal para auditorías, aplicable a auditorías de software:
+1) Principios: integridad, imparcialidad, debido cuidado profesional, confidencialidad, independencia, enfoque basado en evidencia.
+2) Proceso de auditoría:
+   - Inicio: designar líder, contacto inicial, determinar viabilidad.
+   - Preparación: revisión documental, plan de auditoría, asignación de tareas.
+   - Ejecución: reunión de apertura, entrevistas, observación, recolección de evidencia.
+   - Informe: preparar, aprobar y distribuir resultados.
+   - Cierre: conservación de registros y seguimiento de acciones correctivas.`,
+      keywords: 'ISO19011,metodo auditoria,proceso,evidencia,informe,seguimiento,principios',
+      source: 'ISO 19011:2018', created_at: new Date().toISOString()
+    },
+    {
+      id: uuidv4(), category: 'metodos_auditoria',
+      title: 'Métodos de Auditoría: ISAE 3000 e ISACA ITAF',
+      content: `Métodos formales de auditoría de software más utilizados internacionalmente:
+1) ISAE 3000: estándar para compromisos de aseguramiento. Define procedimientos para obtener evidencia suficiente, evaluación de riesgos y conclusión formal. Aplicable a auditorías de controles de TI.
+2) ISACA ITAF (IT Assurance Framework): marco de auditoría de TI basado en COBIT 2019. Técnicas: entrevistas, observación, inspección documental, pruebas de controles, pruebas sustantivas.
+3) Muestreo en auditoría: estadístico (selección aleatoria), por juicio profesional, por atributos (sí/no).
+4) TAAC/CAAT (Técnicas de Auditoría Asistidas por Computador): análisis de datos, pruebas de integridad de bases de datos, revisión de logs del sistema.`,
+      keywords: 'ISAE3000,ISACA,COBIT,metodo,muestreo,CAAT,tecnicas auditoria,aseguramiento,ITAF',
+      source: 'ISAE 3000, ISACA ITAF, COBIT 2019', created_at: new Date().toISOString()
     }
   ];
   
